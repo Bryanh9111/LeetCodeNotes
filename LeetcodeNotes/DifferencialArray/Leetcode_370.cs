@@ -36,5 +36,21 @@ namespace LeetcodeNotes.DifferencialArray
 
             return arr;
         }
+        /// <summary>
+        /// time limit exceeded
+        /// </summary>
+        /// <param name="length"></param>
+        /// <param name="updates"></param>
+        /// <returns></returns>
+        public int[] GetModifiedArray_Slow(int length, int[][] updates)
+        {
+            int[] arr = new int[length];
+            foreach(var update in updates)
+            {
+                for (int i = update[0]; i <= update[1]; i++)
+                    arr[i] += update[2];
+            }
+            return arr;
+        }
     }
 }
