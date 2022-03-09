@@ -5,6 +5,7 @@ using System.Text;
 namespace LeetcodeNotes.PrefixAndArray
 {
     /// <summary>
+    /// Range Sum Query - Immutable
     /// reduce the time complexity from O(N) to O(1): no for loop in SumRange
     /// </summary>
     class NumArray

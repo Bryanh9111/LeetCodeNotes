@@ -1,5 +1,5 @@
 ﻿using System;
-using LeetcodeNotes.PrefixAndArray;
+using LeetcodeNotes.DifferencialArray;
 
 namespace LeetcodeNotes
 {
@@ -10,25 +10,19 @@ namespace LeetcodeNotes
             var watch1 = new System.Diagnostics.Stopwatch();
             watch1.Start();
             /////////////////
-            NumArray na = new NumArray(new int[] { -2, 0, 3, -5, 2, -1 });
-            na.SumRange(0, 2);
-            na.SumRange(2, 5);
-            na.SumRange(0, 5);
+            Solution cs1 = new Solution();
+            int[][] jagged_arr = new int[][]
+            {
+                new int[] { 1, 3, 2 },
+                new int[] { 2, 4, 3 },
+                new int[] { 0, 2, -2 }
+            };
+
+            var res = cs1.GetModifiedArray(5, jagged_arr);
+
             /////////////////
             watch1.Stop();
             Console.WriteLine($"Execution Time watch1: {watch1.ElapsedMilliseconds} ms");
-
-            var watch2 = new System.Diagnostics.Stopwatch();
-            watch2.Start();
-            /////////////////
-            NumArray_SLOW nas = new NumArray_SLOW(new int[] { -2, 0, 3, -5, 2, -1 });
-            nas.SumRange(0, 2);
-            nas.SumRange(2, 5);
-            nas.SumRange(0, 5);
-            /////////////////
-            watch2.Stop();
-            Console.WriteLine($"Execution Time watch2: {watch2.ElapsedMilliseconds} ms");
-            Console.ReadKey();
         }
     }
 }
