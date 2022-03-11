@@ -13,12 +13,12 @@ namespace LeetcodeNotes
             Solution cs1 = new Solution();
             int[][] jagged_arr = new int[][]
             {
-                new int[] { 1, 3, 2 },
-                new int[] { 2, 4, 3 },
-                new int[] { 0, 2, -2 }
+                new int[] { 1, 2, 10 },
+                new int[] { 2, 3, 20 },
+                new int[] { 2, 5, 25 }
             };
 
-            var res = cs1.GetModifiedArray(5, jagged_arr);
+            var res = cs1.CorpFlightBookings(jagged_arr, 5);
 
             /////////////////
             watch1.Stop();
