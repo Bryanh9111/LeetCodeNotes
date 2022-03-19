@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LeetcodeNotes.DoublePointer
+namespace LeetcodeNotes.TwoPointer
 {
     //Definition for singly-linked list.
      public class ListNode {

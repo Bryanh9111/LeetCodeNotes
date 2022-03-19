@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LeetcodeNotes.DoublePointer
+namespace LeetcodeNotes.TwoPointer
 {
     public partial class Solution
     {

@@ -1,5 +1,5 @@
 ﻿using System;
-using LeetcodeNotes.DifferencialArray;
+using LeetcodeNotes.TwoPointer_left_right;
 
 namespace LeetcodeNotes
 {
@@ -7,8 +7,8 @@ namespace LeetcodeNotes
     {
         static void Main(string[] args)
         {
-            var watch1 = new System.Diagnostics.Stopwatch();
-            watch1.Start();
+            //var watch1 = new System.Diagnostics.Stopwatch();
+            //watch1.Start();
             /////////////////
             Solution cs1 = new Solution();
             int[][] jagged_arr = new int[][]
@@ -18,11 +18,11 @@ namespace LeetcodeNotes
                 new int[] { 2, 5, 25 }
             };
 
-            var res = cs1.CorpFlightBookings(jagged_arr, 5);
+            var res = cs1.LengthOfLongestSubstring("pwwkew");
 
             /////////////////
-            watch1.Stop();
-            Console.WriteLine($"Execution Time watch1: {watch1.ElapsedMilliseconds} ms");
+            //watch1.Stop();
+            //Console.WriteLine($"Execution Time watch1: {watch1.ElapsedMilliseconds} ms");
         }
     }
 }
