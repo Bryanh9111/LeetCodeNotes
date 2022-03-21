@@ -1,5 +1,5 @@
 ﻿using System;
-using LeetcodeNotes.TwoPointer_left_right;
+using LeetcodeNotes.BinarySearch;
 
 namespace LeetcodeNotes
 {
@@ -18,7 +18,7 @@ namespace LeetcodeNotes
                 new int[] { 2, 5, 25 }
             };
 
-            var res = cs1.LengthOfLongestSubstring("pwwkew");
+            var res = cs1.Search2(new int[] { 5 }, 13);
 
             /////////////////
             //watch1.Stop();
