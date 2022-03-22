@@ -18,7 +18,7 @@ namespace LeetcodeNotes
                 new int[] { 2, 5, 25 }
             };
 
-            var res = cs1.Search2(new int[] { 5 }, 13);
+            var res = cs1.MinEatingSpeed(new int[] { 3, 6, 7, 11 }, 8);
 
             /////////////////
             //watch1.Stop();

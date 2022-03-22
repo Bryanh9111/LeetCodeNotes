@@ -126,5 +126,33 @@ namespace LeetcodeNotes.BinarySearch
                 return -1;
             return left - 1; //当while结束时nums[left]肯定不是target，而nums[left - 1]可能是target
         }
+
+        ////二分搜索套路框架
+        ////1: 确定 x, f(x), target 分别是什么，并写出函数 f 的代码。
+        ////2: 到 x 的取值范围作为⼆分搜索的搜索区间，初始化 left 和 right 变量。        ////3: 根据题⽬的要求，确定应该使⽤搜索左侧还是搜索右侧的⼆分搜索算法，写出解法代码。
+        //public int f(int x)
+        //{
+        //    //x相关操作
+        //}
+        //public int solution_f(int[] nums, int target)
+        //{
+        //    //if (nums.Length == 0) return -1;
+        //    ////x的最小值
+        //    //int left = ...;
+        //    ////x的最大值
+        //    //int right = ...;
+
+        //    //while (left < right)
+        //    //{
+        //    //    int mid = left + (right - left) / 2;
+        //    //    if(f(mid) == target)
+        //    //        //搞清题目求左边界还是右边界
+        //    //    else if(f(mid) < target)
+        //    //        //怎么让f(x)大一点
+        //    //    else if(f(mid) > target)
+        //    //        //怎么让f(x)小一点
+        //    //}
+        //    //return left;
+        //}
     }
 }
