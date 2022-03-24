@@ -1,5 +1,5 @@
 ﻿using System;
-using LeetcodeNotes.BinarySearch;
+using LeetcodeNotes.田忌赛马背后的决策算法;
 
 namespace LeetcodeNotes
 {
@@ -18,7 +18,7 @@ namespace LeetcodeNotes
                 new int[] { 2, 5, 25 }
             };
 
-            var res = cs1.MinEatingSpeed(new int[] { 3, 6, 7, 11 }, 8);
+            var res = cs1.AdvantageCount(new int[] { 12, 24, 8, 32 }, new int[] { 13, 25, 32, 11 });
 
             /////////////////
             //watch1.Stop();
