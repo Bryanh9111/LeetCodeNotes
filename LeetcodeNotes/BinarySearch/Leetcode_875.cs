@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LeetcodeNotes.BinarySearch
 {
-    public partial class Solution
+    public class Leetcode_875
     {
         //速度为x时，需要f(x)小时吃完
         public int F(int[] piles, int x)

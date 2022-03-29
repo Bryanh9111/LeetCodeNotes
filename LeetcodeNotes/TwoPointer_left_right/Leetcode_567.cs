@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LeetcodeNotes.TwoPointer_left_right
 {
-    public partial class Solution
+    public class Leetcode_567
     {
         public bool CheckInclusion(string s1, string s2)
         {

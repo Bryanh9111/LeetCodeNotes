@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LeetcodeNotes.TwoPointer
 {
-    public partial class Solution
+    public class Leetcode_876
     {
         public ListNode MiddleNode(ListNode head)
         {

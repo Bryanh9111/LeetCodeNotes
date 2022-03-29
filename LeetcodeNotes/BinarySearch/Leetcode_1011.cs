@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LeetcodeNotes.BinarySearch
 {
-    public partial class Solution
+    public class Leetcode_1011
     {
         //函数返回x运载能力下所需天数（题目问什么，什么就是x）
         public int f(int[] weights, int x)

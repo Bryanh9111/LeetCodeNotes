@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LeetcodeNotes.DifferencialArray
 {
-    public partial class Solution
+    public class Leetcode_1094
     {
         public bool CarPooling(int[][] trips, int capacity)
         {

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LeetcodeNotes.BinarySearch
 {
-    public partial class Solution
+    public class Leetcode_34
     {
         public int[] SearchRange(int[] nums, int target)
         {

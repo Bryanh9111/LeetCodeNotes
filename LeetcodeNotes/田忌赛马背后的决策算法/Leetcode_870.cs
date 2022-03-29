@@ -10,7 +10,7 @@ namespace LeetcodeNotes.田忌赛马背后的决策算法
         public int index;
         public int number;
     }
-    public partial class Solution
+    public class Leetcode_870
     {
         //time limit exceeds
         public int[] AdvantageCount(int[] nums1, int[] nums2)

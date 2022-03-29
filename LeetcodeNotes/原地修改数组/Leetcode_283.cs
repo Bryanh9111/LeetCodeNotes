@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LeetcodeNotes.原地修改数组
 {
-    public partial class Solution
+    public class Leetcode_283
     {
         public void MoveZeroes(int[] nums)
         {

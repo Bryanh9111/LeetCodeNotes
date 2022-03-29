@@ -5,7 +5,7 @@ using LeetcodeNotes.TwoPointer;
 
 namespace LeetcodeNotes.原地修改数组
 {
-    public partial class Solution
+    public class Leetcode_83
     {
         public ListNode DeleteDuplicates(ListNode head)
         {

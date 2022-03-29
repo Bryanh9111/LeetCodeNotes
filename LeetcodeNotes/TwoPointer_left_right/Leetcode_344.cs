@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LeetcodeNotes.TwoPointer_left_right
 {
-    public partial class Solution
+    public class Leetcode_344
     {
         public void ReverseString(char[] s)
         {

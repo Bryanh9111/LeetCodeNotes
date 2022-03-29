@@ -8,11 +8,11 @@ namespace LeetcodeNotes.PrefixAndArray
     /// Range Sum Query - Immutable
     /// reduce the time complexity from O(N) to O(1): no for loop in SumRange
     /// </summary>
-    class NumArray
+    public class Leetcode_303
     {
         private int[] preSum;
 
-        public NumArray(int[] nums)
+        public Leetcode_303(int[] nums)
         {
             preSum = new int[nums.Length + 1];
             for (int i = 1; i < preSum.Length; i++)
@@ -30,11 +30,11 @@ namespace LeetcodeNotes.PrefixAndArray
         }
     }
 
-    class NumArray_SLOW
+    public class Leetcode_303SLOW
     {
         private int[] nums;
 
-        public NumArray_SLOW(int[] nums)
+        public Leetcode_303SLOW(int[] nums)
         {
             this.nums = nums;
         }

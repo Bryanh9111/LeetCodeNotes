@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LeetcodeNotes.DifferencialArray
 {
-    public partial class Solution
+    public class Leetcode_1109
     {
         public int[] CorpFlightBookings_direct(int[][] bookings, int n)
         {

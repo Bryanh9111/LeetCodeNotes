@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LeetcodeNotes.原地修改数组
 {
-    public partial class Solution
+    public class Leetcode_26
     {
         //快慢指针
         public int RemoveDuplicates(int[] nums)

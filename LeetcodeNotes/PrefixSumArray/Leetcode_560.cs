@@ -7,7 +7,7 @@ namespace LeetcodeNotes.PrefixSumArray
     /// <summary>
     /// Subarray Sum Equals K
     /// </summary>
-    public class Solution
+    public class Leetcode_560
     {
         /// <summary>
         /// TC: O(N^2)

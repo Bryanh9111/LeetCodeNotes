@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LeetcodeNotes.DifferencialArray
 {
-    public partial class Solution
+    public class Leetcode_370
     {
         /// <summary>
         /// Use O(1) to update diff array instead of O(N) each time

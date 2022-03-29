@@ -2,22 +2,19 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LeetcodeNotes.TwoPointer
+namespace LeetcodeNotes.单链表
 {
-    public class Leetcode_141
+    class Leetcode_876
     {
-        public bool HasCycle(ListNode head)
+        public ListNode MiddleNode(ListNode head)
         {
-            ListNode fast, slow;
-            fast = slow = head;
+            ListNode fast = head, slow = head;
             while(fast != null && fast.next != null)
             {
                 fast = fast.next.next;
                 slow = slow.next;
-
-                if (fast == slow) return true;
             }
-            return false;
+            return slow;
         }
     }
 }
