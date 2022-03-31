@@ -1,5 +1,5 @@
 ﻿using System;
-using LeetcodeNotes.田忌赛马背后的决策算法;
+using LeetcodeNotes.括号;
 
 namespace LeetcodeNotes
 {
@@ -10,7 +10,10 @@ namespace LeetcodeNotes
             //var watch1 = new System.Diagnostics.Stopwatch();
             //watch1.Start();
             /////////////////
-            //Solution cs1 = new Solution();
+            Leetcode_1541 cs1 = new Leetcode_1541();
+            cs1.MinInsertions("(()))");
+
+
             //int[][] jagged_arr = new int[][]
             //{
             //    new int[] { 1, 2, 10 },
