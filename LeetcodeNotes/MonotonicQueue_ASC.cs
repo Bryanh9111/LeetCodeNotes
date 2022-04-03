@@ -4,6 +4,9 @@ using System.Text;
 
 namespace LeetcodeNotes
 {
+    /// <summary>
+    /// O(1)
+    /// </summary>
     public class MonotonicQueue_ASC
     {
         private LinkedList<int> q;

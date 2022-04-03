@@ -4,6 +4,9 @@ using System.Text;
 
 namespace LeetcodeNotes
 {
+    /// <summary>
+    /// O(1)
+    /// </summary>
     public class MonotonicQueue_DESC
     {
         //双链表，⽀持头部和尾部增删元素

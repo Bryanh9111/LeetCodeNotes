@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using LeetcodeNotes.单调队列解决滑动窗口;
+using LeetcodeNotes.数组去重;
 
 namespace LeetcodeNotes
 {
@@ -11,8 +11,8 @@ namespace LeetcodeNotes
             //var watch1 = new System.Diagnostics.Stopwatch();
             //watch1.Start();
             /////////////////
-            Leetcode_239 cs1 = new Leetcode_239();
-            var a = cs1.MinSlidingWindow(new int[] { 1, 3, -1, -3, 5, 3, 6, 7 }, 3);
+            Leetcode_316 cs1 = new Leetcode_316();
+            var a = cs1.RemoveDuplicateLetters("cbacdcbc");
 
 
             //int[][] jagged_arr = new int[][]
