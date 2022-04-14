@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using LeetcodeNotes.数组去重;
+using LeetcodeNotes._2_进阶数据结构._2._1_二叉树.二叉树序列化;
 
 namespace LeetcodeNotes
 {
@@ -11,8 +11,8 @@ namespace LeetcodeNotes
             //var watch1 = new System.Diagnostics.Stopwatch();
             //watch1.Start();
             /////////////////
-            Leetcode_316 cs1 = new Leetcode_316();
-            var a = cs1.RemoveDuplicateLetters("cbacdcbc");
+            Leetcode_297_post cs1 = new Leetcode_297_post();
+            var a = cs1.deserialize("#,#,#,#,#,#,2,4,5,3,1,");
 
 
             //int[][] jagged_arr = new int[][]
