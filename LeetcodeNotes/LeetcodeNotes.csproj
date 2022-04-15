@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="2-进阶数据结构\2.2-二叉搜索树\" />
+    <Folder Include="2-进阶数据结构\2.2-二叉搜索树\3\" />
     <Folder Include="2-进阶数据结构\2.3-图论\" />
   </ItemGroup>
 
