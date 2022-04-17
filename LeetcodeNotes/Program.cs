@@ -6,6 +6,7 @@ namespace LeetcodeNotes
 {
     class Program
     {
+        //test
         static void Main(string[] args)
         {
             //var watch1 = new System.Diagnostics.Stopwatch();
