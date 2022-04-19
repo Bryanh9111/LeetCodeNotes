@@ -1,19 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using LeetcodeNotes._2_进阶数据结构._2._1_二叉树.二叉树序列化;
+using LeetcodeNotes.TwoPointer_left_right;
 
 namespace LeetcodeNotes
 {
     class Program
     {
-        //testtest
         static void Main(string[] args)
         {
             //var watch1 = new System.Diagnostics.Stopwatch();
             //watch1.Start();
             /////////////////
-            Leetcode_297_post cs1 = new Leetcode_297_post();
-            var a = cs1.deserialize("#,#,#,#,#,#,2,4,5,3,1,");
+            Leetcode_567 cs1 = new Leetcode_567();
+            var a = cs1.CheckInclusion3("abcdxabcde","abcdeabcdx");
 
 
             //int[][] jagged_arr = new int[][]
