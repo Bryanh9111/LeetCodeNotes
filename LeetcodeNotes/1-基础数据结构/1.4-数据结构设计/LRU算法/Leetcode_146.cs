@@ -119,7 +119,8 @@ namespace LeetcodeNotes.LRU算法
     public class DoubleList
     {
         private Node head, tail;// 头尾虚节点
-        private int size;// 链表元素数        
+        private int size;// 链表元素数
+        
         public DoubleList()
         {
             head = new Node(0, 0);

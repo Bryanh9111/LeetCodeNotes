@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using LeetcodeNotes.TwoPointer_left_right;
+using LeetcodeNotes.单调栈;
 
 namespace LeetcodeNotes
 {
@@ -11,8 +11,8 @@ namespace LeetcodeNotes
             //var watch1 = new System.Diagnostics.Stopwatch();
             //watch1.Start();
             /////////////////
-            Leetcode_567 cs1 = new Leetcode_567();
-            var a = cs1.CheckInclusion3("abcdxabcde","abcdeabcdx");
+            Leetcode_496 cs1 = new Leetcode_496();
+            var a = cs1.NextGreaterElementBase(new int[] { 1, 3, 4, 2});
 
 
             //int[][] jagged_arr = new int[][]
