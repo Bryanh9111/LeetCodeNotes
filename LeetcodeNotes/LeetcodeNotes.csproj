@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <Folder Include="2-进阶数据结构\2.3-图论\" />
-    <Folder Include="3-暴⼒搜索算法\3.1-DFS\1-回溯算法解题套路框架\" />
     <Folder Include="3-暴⼒搜索算法\3.1-DFS\2-集合划分问题\" />
     <Folder Include="3-暴⼒搜索算法\3.1-DFS\3-子集-排列-组合问题\" />
     <Folder Include="3-暴⼒搜索算法\3.1-DFS\4-岛屿题\" />
