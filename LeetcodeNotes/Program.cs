@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using LeetcodeNotes.单调栈;
+using LeetcodeNotes._3_暴_搜索算法._3._1_DFS._2_集合划分问题;
 
 namespace LeetcodeNotes
 {
@@ -11,8 +11,8 @@ namespace LeetcodeNotes
             //var watch1 = new System.Diagnostics.Stopwatch();
             //watch1.Start();
             /////////////////
-            Leetcode_496 cs1 = new Leetcode_496();
-            var a = cs1.NextGreaterElementBase(new int[] { 1, 3, 4, 2});
+            Leetcode_698_bucket_fast cs1 = new Leetcode_698_bucket_fast();
+            var a = cs1.CanPartitionKSubsets(new int[] { 1, 1, 1, 1, 2, 2, 2, 2 }, 4);
 
 
             //int[][] jagged_arr = new int[][]
