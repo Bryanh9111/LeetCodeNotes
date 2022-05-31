@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using LeetcodeNotes._3_暴_搜索算法._3._1_DFS._2_集合划分问题;
+using LeetcodeNotes._3_暴_搜索算法._3._1_DFS._4_岛屿题;
 
 namespace LeetcodeNotes
 {
@@ -11,8 +11,19 @@ namespace LeetcodeNotes
             //var watch1 = new System.Diagnostics.Stopwatch();
             //watch1.Start();
             /////////////////
-            Leetcode_698_bucket_fast cs1 = new Leetcode_698_bucket_fast();
-            var a = cs1.CanPartitionKSubsets(new int[] { 1, 1, 1, 1, 2, 2, 2, 2 }, 4);
+            int[][] jagged_arr = new int[][]
+            {
+                new int[] { 0,0,1,0,0,0,0,1,0,0,0,0,0 },
+                new int[] { 0,0,0,0,0,0,0,1,1,1,0,0,0 },
+                new int[] { 0,1,1,0,1,0,0,0,0,0,0,0,0 },
+                new int[] { 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0 },
+                new int[] { 0,1,0,0,1,1,0,0,1,1,1,0,0 },
+                new int[] { 0,0,0,0,0,0,0,0,0,0,1,0,0 },
+                new int[] { 0,0,0,0,0,0,0,1,1,1,0,0,0 },
+                new int[] { 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0 }
+            };
+            Leetcode_695 cs1 = new Leetcode_695();
+            var a = cs1.MaxAreaOfIsland(jagged_arr);
 
 
             //int[][] jagged_arr = new int[][]
