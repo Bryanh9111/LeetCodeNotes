@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using LeetcodeNotes._3_暴_搜索算法._3._1_DFS._4_岛屿题;
+using LeetcodeNotes._4_动态规划._4._2_经典动态规划;
 
 namespace LeetcodeNotes
 {
@@ -13,19 +13,14 @@ namespace LeetcodeNotes
             /////////////////
             int[][] jagged_arr = new int[][]
             {
-                new int[] { 0,0,1,0,0,0,0,1,0,0,0,0,0 },
-                new int[] { 0,0,0,0,0,0,0,1,1,1,0,0,0 },
-                new int[] { 0,1,1,0,1,0,0,0,0,0,0,0,0 },
-                new int[] { 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0 },
-                new int[] { 0,1,0,0,1,1,0,0,1,1,1,0,0 },
-                new int[] { 0,0,0,0,0,0,0,0,0,0,1,0,0 },
-                new int[] { 0,0,0,0,0,0,0,1,1,1,0,0,0 },
-                new int[] { 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0 }
+                new int[] { 2,1,3 },
+                new int[] { 6,5,4 },
+                new int[] { 7,8,9 }
             };
-            Leetcode_695 cs1 = new Leetcode_695();
-            var a = cs1.MaxAreaOfIsland(jagged_arr);
+            Leetcode_712_backtracking cs1 = new Leetcode_712_backtracking();
+            var a = cs1.MinimumDeleteSum("sea", "eat");
 
-
+            Console.ReadKey();
             //int[][] jagged_arr = new int[][]
             //{
             //    new int[] { 1, 2, 10 },
