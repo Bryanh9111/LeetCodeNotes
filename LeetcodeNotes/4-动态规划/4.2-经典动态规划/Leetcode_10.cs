@@ -63,4 +63,54 @@ namespace LeetcodeNotes._4_动态规划._4._2_经典动态规划
             return res;
         }
     }
+    internal class Leetcode_10_memoarray
+    {
+        int[,] memo;
+        public bool IsMatch(string s, string p)
+        {
+            memo = new int[s.Length, p.Length];
+            for (int i = 0; i < s.Length; i++)
+                for (int j = 0; j < p.Length; j++)
+                    memo[i, j] = -1;
+
+            return dp(s, 0, p, 0);
+        }
+
+        public bool dp(string s, int i, string p, int j)
+        {
+            if (i == s.Length)
+            {
+                if ((p.Length - j) % 2 == 1)
+                    return false;
+                j++;
+                for (; j < p.Length; j += 2)
+                    if (p[j] != '*')
+                        return false;
+
+                return true;
+            }
+            if (j == p.Length)
+                return i == s.Length;
+
+            if (memo[i, j] != -1)
+                return memo[i, j] == 1;
+
+            if (s[i] == p[j] || p[j] == '.')
+            {
+                if (j < p.Length - 1 && p[j + 1] == '*')
+                    memo[i, j] = (dp(s, i, p, j + 2) || dp(s, i + 1, p, j)) ? 1 : 0;
+                else
+                    memo[i, j] = dp(s, i + 1, p, j + 1) ? 1 : 0;
+            }
+            else
+            {
+                if (j < p.Length - 1 && p[j + 1] == '*')
+                    memo[i, j] = dp(s, i, p, j + 2) ? 1 : 0;
+                else
+                    memo[i, j] = 0;
+            }
+
+            return memo[i, j] == 1;
+        }
+    }
 }
