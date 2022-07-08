@@ -66,6 +66,53 @@ namespace LeetcodeNotes._4_动态规划._4._2_经典动态规划
         //同时前移 i，j 继续对⽐
         //操作数加⼀
     }
+    internal class Leetcode_72_reverse
+    {
+        int[,] memo;
+        public int MinDistance(string word1, string word2)
+        {
+            int m = word1.Length;
+            int n = word2.Length;
+
+            memo = new int[m, n];
+            for (int i = 0; i < m; i++)
+                for (int j = 0; j < n; j++)
+                    memo[i, j] = -1;
+
+            return dp(word1, 0, word2, 0);
+        }
+
+        public int dp(string s1, int i, string s2, int j)
+        {
+            if (i == s1.Length)
+                return s2.Length - j;
+            if (j == s2.Length)
+                return s1.Length - i;
+
+            if (memo[i, j] != -1)
+                return memo[i, j];
+
+            if (s1[i] == s2[j])
+            {
+                memo[i, j] = dp(s1, i + 1, s2, j + 1);
+            }
+            else
+            {
+                memo[i, j] = MinHelper(dp(s1, i, s2, j + 1), dp(s1, i + 1, s2, j + 1), dp(s1, i + 1, s2, j)) + 1;
+            }
+
+            return memo[i, j];
+
+            //dp(s1, i, s2, j + 1) insert
+            //dp(s1, i + 1, s2, j + 1) replace
+            //dp(s1, i + 1, s2, j) remove
+        }
+
+        public int MinHelper(int a, int b, int c)
+        {
+            return Math.Min(a, Math.Min(b, c));
+        }
+    }
     internal class Leetcode_72_dp_table
     {
         public int MinDistance(string word1, string word2)

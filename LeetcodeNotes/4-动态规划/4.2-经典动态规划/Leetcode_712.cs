@@ -100,4 +100,36 @@ namespace LeetcodeNotes._4_动态规划._4._2_经典动态规划
             return memo[i, j];
         }
     }
+    //搞不明白
+    internal class Leetcode_712_dptabledirect
+    {
+        public int MinimumDeleteSum(string s1, string s2)
+        {
+            int m = s1.Length;
+            int n = s2.Length;
+
+            int[,] dp = new int[m + 1, n + 1];
+            dp[0, 0] = 0;
+            dp[0, 1] = s2[0];
+            dp[1, 0] = s1[0];
+
+            for (int i = 1; i <= m; i++)
+            {
+                Console.WriteLine("---------------------------");
+                Console.WriteLine($"i: {s1[i-1]}: {s1[i-1] + 0}");
+                for (int j = 1; j <= n; j++)
+                {
+                    Console.WriteLine("------------");
+                    Console.WriteLine($"j: {s2[j-1]}: {s2[j-1] + 0}");
+                    if (s1[i - 1] == s2[j - 1])
+                        dp[i, j] = dp[i - 1, j - 1];
+                    else
+                        dp[i, j] = Math.Min(s1[i - 1] + dp[i - 1, j], s2[j - 1] + dp[i, j - 1]);
+
+                    Console.WriteLine($"dp[{i}, {j}]: {dp[i, j]}");
+                }
+            }
+            return dp[m, n];
+        }
+    }
 }

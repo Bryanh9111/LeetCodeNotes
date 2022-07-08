@@ -17,7 +17,7 @@ namespace LeetcodeNotes
                 new int[] { 6,5,4 },
                 new int[] { 7,8,9 }
             };
-            Leetcode_712_backtracking cs1 = new Leetcode_712_backtracking();
+            Leetcode_712_dptabledirect cs1 = new Leetcode_712_dptabledirect();
             var a = cs1.MinimumDeleteSum("sea", "eat");
 
             Console.ReadKey();
