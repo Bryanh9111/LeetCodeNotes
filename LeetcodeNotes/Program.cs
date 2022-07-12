@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using LeetcodeNotes._4_动态规划._4._2_经典动态规划;
+using LeetcodeNotes._4_动态规划._4._3_背包问题._3_子集背包问题;
 
 namespace LeetcodeNotes
 {
@@ -17,8 +17,8 @@ namespace LeetcodeNotes
                 new int[] { 6,5,4 },
                 new int[] { 7,8,9 }
             };
-            Leetcode_712_dptabledirect cs1 = new Leetcode_712_dptabledirect();
-            var a = cs1.MinimumDeleteSum("sea", "eat");
+            Leetcode_416_lessspace cs1 = new Leetcode_416_lessspace();
+            var a = cs1.CanPartition(new int[] {1, 2, 5 });
 
             Console.ReadKey();
             //int[][] jagged_arr = new int[][]
