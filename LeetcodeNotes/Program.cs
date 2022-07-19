@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using LeetcodeNotes._4_动态规划._4._3_背包问题._3_子集背包问题;
+using LeetcodeNotes._4_动态规划._4._4_用动态规划玩游戏._6_动态规划帮我通关了魔塔;
 
 namespace LeetcodeNotes
 {
@@ -13,12 +13,12 @@ namespace LeetcodeNotes
             /////////////////
             int[][] jagged_arr = new int[][]
             {
-                new int[] { 2,1,3 },
-                new int[] { 6,5,4 },
-                new int[] { 7,8,9 }
+                new int[] { -2,-3,3 },
+                new int[] { -5,-10,1 },
+                new int[] { 10,30,-5 }
             };
-            Leetcode_416_lessspace cs1 = new Leetcode_416_lessspace();
-            var a = cs1.CanPartition(new int[] {1, 2, 5 });
+            Leetcode_174 cs1 = new Leetcode_174();
+            var a = cs1.CalculateMinimumHP(jagged_arr);
 
             Console.ReadKey();
             //int[][] jagged_arr = new int[][]
