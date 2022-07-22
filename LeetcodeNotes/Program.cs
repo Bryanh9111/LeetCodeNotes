@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using LeetcodeNotes._4_动态规划._4._4_用动态规划玩游戏._6_动态规划帮我通关了魔塔;
+using LeetcodeNotes._5_其他经典算法._5._3_面试必知必会._1_一个方法团灭nSum问题;
 
 namespace LeetcodeNotes
 {
@@ -17,8 +17,8 @@ namespace LeetcodeNotes
                 new int[] { -5,-10,1 },
                 new int[] { 10,30,-5 }
             };
-            Leetcode_174 cs1 = new Leetcode_174();
-            var a = cs1.CalculateMinimumHP(jagged_arr);
+            Leetcode_18 cs1 = new Leetcode_18();
+            var a = cs1.FourSum(new int[] { 1, 0, -1, 0, -2, 2 }, 0);
 
             Console.ReadKey();
             //int[][] jagged_arr = new int[][]
