@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using LeetcodeNotes._5_其他经典算法._5._3_面试必知必会._1_一个方法团灭nSum问题;
+using LeetcodeNotes._5_其他经典算法._5._3_面试必知必会._4_扫描线技巧_安排会议室;
 
 namespace LeetcodeNotes
 {
@@ -13,12 +13,11 @@ namespace LeetcodeNotes
             /////////////////
             int[][] jagged_arr = new int[][]
             {
-                new int[] { -2,-3,3 },
-                new int[] { -5,-10,1 },
-                new int[] { 10,30,-5 }
+                new int[] { 7, 10 },
+                new int[] { 2, 4 }
             };
-            Leetcode_18 cs1 = new Leetcode_18();
-            var a = cs1.FourSum(new int[] { 1, 0, -1, 0, -2, 2 }, 0);
+            Leetcode_252 cs1 = new Leetcode_252();
+            var a = cs1.CanAttendMeetings(jagged_arr);
 
             Console.ReadKey();
             //int[][] jagged_arr = new int[][]
